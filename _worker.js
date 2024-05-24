@@ -6,10 +6,10 @@ import { connect } from 'cloudflare:sockets';
 let userID = 'f3ffc822-522c-435a-901f-f421b2157a08';
 
 // 生成配置文件的 CF 优选 IP
-const bestCFIP = "15.235.163.231"
+const bestCFIP = "35.219.7.133"
 
 // 用于 CF 网站的代理 IP
-const proxyIPs = ["15.235.163.231"]; // const proxyIPs = ['cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'];
+const proxyIPs = ["35.219.7.133"]; // const proxyIPs = ['cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
